@@ -1,0 +1,19 @@
+@import url("./header.style.css");
+@import url("./main.style.css");
+@import url("./footer.style.css");
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", "Helvetica Neue";
+    color: rgb(105, 37, 37);
+  }
+  
+  body {
+    background-color: rgb(250, 242, 242);
+    height: 100svh;
+    box-sizing: border-box;
+    margin: 10;
+    padding: 0;
+  }
+
