@@ -31,3 +31,46 @@ main h1 {
   transform: scale(3.50); 
 }
 
+.general {
+  width: 90%; /*ancho*/
+  max-width: 1200px; /*ancho maximo*/
+  margin: auto;
+  padding: 40px 0;
+  display: grid; /*declara qe la clase serà dividida en grid (red o reja)*/
+  grid-template-columns: 1fr 3fr; /*declara qe la clase serà divida en dos colunmnas, la primera de tres fracciones y la segunda de una fraccion*/
+  gap: 20px; /*espaciado entre grid: 20 pixeles*/
+         }
+
+.division1 {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); /*con la funcion repetir, se puede leeer: repetir tres columnas de a una fraccion cada una*/
+  gap: 20px;
+  }
+
+.imagenes {
+  border-radius: 50px; /*establece el redondeo de las esquinas del elemento.*/
+  min-height: 200px; /*altura minima*/
+  font-weight: bold; /*specifica el peso o grueso de la letra.*/
+  padding: 20px;
+  position: relative; /*posiciòn relativa: El elemento es posicionado de acuerdo al flujo normal del documento, y luego es desplazado con relación a sí mismo, con base en los valores de top, right, bottom, and left*/
+  overflow: hidden; /*desbordamiento escondido: El contenido desbordado se recorta en el cuadro de relleno del elemento. No hay barras de desplazamiento y el contenido recortado no es visible (es decir, el contenido recortado está oculto), pero el contenido aún existe.*/
+  background-size: cover; /*medida de la imagen de fondo cubierto: Escala la imagen (conservando su proporción) al tamaño más pequeño posible para llenar el contenedor (es decir: tanto su alto como su ancho cubren completamente el contenedor), sin dejar espacios vacíos.*/
+  background-position: center center; /*posicion de imagen de fondo en el centro*/
+  transition: transform .8s; 
+
+  }
+
+.imagenes:hover{
+  transform: scale(1.5); 
+}
+
+.division2 {
+  border-radius: 50px;
+  text-align: center;
+  padding: 20px;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+                }
