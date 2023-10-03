@@ -25,10 +25,10 @@ header{
 }
 
 .menu li{
-  margin-right: 30px;
+  margin: 0;
   box-sizing: border-box;
-   padding-top: 13px; padding-bottom: 13px;
-   padding-left: 20px ; padding-right: 20px;
+   padding-top: 10px; padding-bottom: 10px;
+   padding-left: 15px ; padding-right: 15px;
   
 }
 
@@ -56,8 +56,8 @@ header{
 }
 
 .marquee{
-  padding: 10px;
-  background-color: black;
+  padding: 0;
+  background-color:#332013;
   color: #d0b49f;
   align-items: center;
   
