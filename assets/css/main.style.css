@@ -64,7 +64,6 @@ main h1 {
 
 .general {
   width: 90%; /*ancho*/
-  max-width: 1200px; /*ancho maximo*/
   margin: auto;
   padding: 40px 0;
   display: grid; /*declara qe la clase serà dividida en grid (red o reja)*/
