@@ -1,6 +1,7 @@
 @import url("./header.style.css");
 @import url("./main.style.css");
 @import url("./footer.style.css");
+@import url("./registro.css");
 
 html {
     margin: 0;
