@@ -8,6 +8,7 @@
     <title>Chocolates</title>
 </head>
 <body>
+    <script src="registro.js"></script>
     <header>
         <div class="logo">
             <a href="index.html"><img  src="./assets/media/image/Chocolate.jpg" alt="" width="35px"></a>
@@ -30,28 +31,30 @@
                 <h2 class="form_title">Registro</h2>
 
                 <div class="input">
-                    <input type="text" name="name" placeholder="Nombre">
+                    <input type="text" name="name" id="nombre" placeholder="Nombre">
                 </div>
 
                 <div class="input">
-                    <input type="email" name="email" placeholder="Correo electrónico">
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico">
                 </div>
 
                 <div class="input">
-                    <input type="password" name="password" placeholder="Contraseña">
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
                 </div>
 
                 <div class="input">
-                    <input type="password" placeholder="Confirme su contraseña">
+                    <input type="password" id="confirm-password" placeholder="Confirme su contraseña">
                 </div>
 
                 <div class="input">
-                    <input type="tel" name="telefono" placeholder="Número de contacto">
+                    <input type="tel" name="telefono" id="tel" placeholder="Número de contacto">
                 </div>
 
                 <div class="input">
-                    <input type="submit" value="Registrar">
+                    <input type="submit" id="submit" value="Registrar">
                 </div>
+
+                <div id="mensajeError" style="color: red;"></div>
 
             </form>
 
