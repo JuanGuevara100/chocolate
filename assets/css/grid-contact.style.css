@@ -1,0 +1,111 @@
+
+
+.contenedor{
+    width: 90% ;
+    height: 100%;
+    max-width: 3000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 2.5%;
+    grid-template-areas:"title title title"
+                        "sidebar filo filo"
+                        "produ produ sidebar2";
+                        font-size: 1.2vw;
+                        font-weight: 500;
+}
+
+.contenedor > div{
+    background-color: beige;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contenedor .title{
+    background-color: transparent;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;  
+    grid-area: title;
+}
+
+.contenedor .filo{
+    background-color: transparent;
+    grid-area: contenido;
+    text-align: justify;
+    grid-area: filo;
+    
+}
+
+
+.contenedor .produ{
+    background-color: transparent;
+    grid-area: contenido;
+    text-align: left;
+    grid-area: produ;
+}
+
+.contenedor .sidebar{ 
+    grid-area: sidebar;
+    background-image: #fff;
+    color: #000;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 15vw;
+    overflow: hidden;
+    border-radius: 5vh;
+}
+
+.sidebar ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+.sidebar li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+.sidebar img{
+    width: 100%;
+}
+
+.contenedor .sidebar2{
+    grid-area: sidebar2;
+    background-color: #fff;
+    color: #000;
+    display: flexbox;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 5vh ;
+    size: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+
+
+
+}
