@@ -8,7 +8,7 @@
     grid-template-areas: 
                         "sidebar filo filo filo"
                         "produ produ produ sidebar2";
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     font-weight: 500;
 }
 
@@ -23,7 +23,6 @@
     grid-area: title;
     font-size: 2.2vw;
     font-weight: 500;
-
 }
 
 .contenedor .filo{
@@ -31,9 +30,7 @@
     padding: 0;
     text-align: justify;
     grid-area: filo;
-    
 }
-
 
 .contenedor .produ{
     margin: 0;
@@ -58,11 +55,13 @@
     width: 400%;
     animation: slide 15s infinite alternate ease-in-out;
 }
+
 .sidebar li{
     width: 100%;
     list-style: none;
     position: relative;
 }
+
 .sidebar img{
     width: 100%;
 }

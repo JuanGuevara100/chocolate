@@ -32,13 +32,11 @@ main h1 {
 }
 
 .texto-entrada {
-
   list-style: none;
   width: 70%;
   font-size: 20px;
   font-family: 'Satisfy', cursive;
-     
-}
+     }
 
 .boton-enlace {
   margin: 2px;
