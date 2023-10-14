@@ -1,36 +1,34 @@
-
-
 .contenedor{
     width: 90% ;
     height: 100%;
     max-width: 3000px;
-    margin: 20px auto;
+    margin: 10px auto;
     display: grid;
-    grid-gap: 2.5%;
-    grid-template-areas:"title title title"
-                        "sidebar filo filo"
-                        "produ produ sidebar2";
-                        font-size: 1.2vw;
-                        font-weight: 500;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+                        "sidebar filo filo filo"
+                        "produ produ produ sidebar2";
+    font-size: 1.2vw;
+    font-weight: 500;
 }
 
 .contenedor > div{
-    background-color: beige;
-    padding: 20px;
-    border-radius: 5px;
-}
+    padding: 0;
+    margin: 0;
+    }
 
-.contenedor .title{
-    background-color: transparent;
-    display: flexbox;
-    justify-content: center;
-    align-items: center;  
+.title{
+    margin: 0;
+    padding: 0;
     grid-area: title;
+    font-size: 2.2vw;
+    font-weight: 500;
+
 }
 
 .contenedor .filo{
-    background-color: transparent;
-    grid-area: contenido;
+    margin: 0;
+    padding: 0;
     text-align: justify;
     grid-area: filo;
     
@@ -38,20 +36,17 @@
 
 
 .contenedor .produ{
+    margin: 0;
+    padding: 0;
     background-color: transparent;
-    grid-area: contenido;
-    text-align: left;
     grid-area: produ;
 }
 
 .contenedor .sidebar{ 
+    margin: 0;
+    padding: 0;
     grid-area: sidebar;
-    background-image: #fff;
-    color: #000;
-    display: flexbox;
-    align-items: center;
-    justify-content: center;
-    height: 60vh;
+    height: 52vh;
     width: 15vw;
     overflow: hidden;
     border-radius: 5vh;
@@ -61,7 +56,7 @@
     display: flex;
     padding: 0;
     width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
+    animation: slide 15s infinite alternate ease-in-out;
 }
 .sidebar li{
     width: 100%;
@@ -73,23 +68,15 @@
 }
 
 .contenedor .sidebar2{
+    margin: 0;
+    padding: 0;
     grid-area: sidebar2;
-    background-color: #fff;
-    color: #000;
-    display: flexbox;
-    height: 40vh;
-    width: 40vh;
-    border-radius: 5vh ;
+    height: 35vh;
+    width: 45vh;
+    border-radius: 5vh;
     size: 100%;
     overflow: hidden;
 }
-
-
-
-
-
-
-
 
 
 @keyframes slide {
@@ -104,8 +91,4 @@
 
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
-
-
-
-
 }
