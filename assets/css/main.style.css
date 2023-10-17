@@ -10,10 +10,6 @@ main div {
   text-align:center;
 }
 
-main div img {
-  border-radius: 45%;
-}
-
 main h1 {
   text-align:center;
 }
@@ -62,11 +58,12 @@ main h1 {
 }
 
 .general {
+  height: 60svh;
   width: 90%; /*ancho*/
   margin: auto;
   padding: 40px 0;
   display: grid; /*declara qe la clase serà dividida en grid (red o reja)*/
-  grid-template-columns: 1fr 3fr; /*declara qe la clase serà divida en dos colunmnas, la primera de tres fracciones y la segunda de una fraccion*/
+  grid-template-columns: 1fr 3fr; /*declara qe la clase serà divida en dos colunmnas, la primera de una fraccion y la segunda de tres fracciones*/
   gap: 20px; /*espaciado entre grid: 20 pixeles*/
          }
 
@@ -77,6 +74,7 @@ main h1 {
   }
 
 .imagenes {
+  height: 20svh;
   border-radius: 50px; /*establece el redondeo de las esquinas del elemento.*/
   min-height: 200px; /*altura minima*/
   font-weight: bold; /*specifica el peso o grueso de la letra.*/
