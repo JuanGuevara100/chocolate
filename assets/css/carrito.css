@@ -4,12 +4,11 @@
     flex-wrap: wrap;
     gap: 50px;
     margin-bottom: 20px;
-    height: 70vh;
 }
 
 .contenedor-productos img {
-    width: 640px;
-    height: 820px;
+    width: 340px;
+    height: 320px;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -26,6 +25,7 @@
 }
 
 .informacion{
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,17 +34,19 @@
 }
 
 .informacion .prod {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 300;
     font-style: bold;
 }
 
 .informacion .precio {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 500;
 }
 
 .form-carrito{
+    margin: 10px;
+    padding: 10px;
     display: flex;
     align-items: center;
     align-content: center;  
@@ -55,11 +57,11 @@
 }
 
 .informacion .agregar{
-    margin: 30px;
-    padding: 30px;
+    margin: 10px;
+    padding: 10px;
     border-radius: 15px;
     border: none;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: 500;
     cursor: pointer; 
     background-color: rgb(65, 40, 40);
@@ -67,14 +69,16 @@
 
 .informacion .agregar:hover{
     background-color: #5a3c29;
+    
+
 }
 
 .informacion .cantidad{
-    width: 250px;
-    height: 40px;
+    margin: 10px;
+    padding: 10px;
     border-radius: 15px;
     border: none;
-    font-size: 37px;
+    font-size: 17px;
     background-color: rgb(196, 166, 118);
     display: flex;
     align-content: center;
