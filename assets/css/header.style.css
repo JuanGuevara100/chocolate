@@ -35,8 +35,9 @@ header{
 }
 
 .menu a{
+  font-size: 2.5vh;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 
 }
 .menu a:hover{

@@ -2,12 +2,13 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
-    margin-bottom: 20px;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
 }
 
 .contenedor-productos img {
-    width: 340px;
+    width: 290px;
     height: 320px;
     object-fit: cover;
     border-radius: 20px;
@@ -25,7 +26,8 @@
 }
 
 .informacion{
-   
+    margin: 0px;
+    padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
