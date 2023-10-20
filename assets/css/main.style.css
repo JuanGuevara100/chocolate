@@ -68,6 +68,7 @@ main h1 {
          }
 
 .division1 {
+  font-size: 1vh;;
   display: grid; 
   grid-template-columns: repeat(3, 1fr); /*con la funcion repetir, se puede leeer: repetir tres columnas de a una fraccion cada una*/
   gap: 20px;
