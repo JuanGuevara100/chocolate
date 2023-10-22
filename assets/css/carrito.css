@@ -1,15 +1,15 @@
-.contenedor-productos{
+/*.contenedor-productos{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 5px;
     margin: 0;
     padding: 0;
-}
+}*/
 
 .contenedor-productos img {
     width: 290px;
-    height: 320px;
+    height: 400px;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -18,10 +18,9 @@
    box-shadow: 0px 0px 5px 0px rgba (0,0,0,0.75);
    background-color: rgb(250, 242, 242);
    border-radius: 20px;
-   
-}
+   }
 
-.contenedor-productos>div:hover{
+.contenedor-productos>div:hover{    
     background-color: rgb(219, 204, 183);
 }
 
@@ -70,12 +69,11 @@
 }
 
 .informacion .agregar:hover{
-    background-color: #5a3c29;
-    
-
+    background-color: #5a3c29; 
 }
 
 .informacion .cantidad{
+    width: 90px;
     margin: 10px;
     padding: 10px;
     border-radius: 15px;
@@ -92,3 +90,76 @@
     background-color: rgb(196, 150, 85);
     color: #5a3c29;
 }
+
+.producto1 { 
+    grid-area: producto1;
+}
+
+.producto2 {
+    grid-area: producto2;
+}
+
+.producto3 {
+    grid-area: producto3;
+}
+
+.producto4 {
+    grid-area: producto4;
+}
+
+.contenedor-productos {
+        background-color: black;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:  "producto1 producto2 producto3 producto4";      
+        margin: 0;
+        padding: 0;
+    }
+    
+/*Tablet*/
+    @media (max-width: 1024px) {
+        .contenedor-productos {
+            background-color: blue;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:  "producto1 producto2"
+                                  "producto3 producto4";     
+                                                     
+        }
+        .contenedor-productos img {
+            width: 300px;
+            height: 400px;
+        }
+
+        .menu a{
+            font-size: 1.5vh;
+          }
+    }
+
+/*Celular*/
+@media (max-width: 720px) {
+      .contenedor-productos {
+        background-color: red;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:  "producto1"
+                              "producto2"  
+                              "producto3" 
+                              "producto4";     
+                                                 
+    }
+    .contenedor-productos img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .menu a{
+        font-size: 1.2vh;
+      }
+
+    footer ul li{
+        font-size: 1.5vh;
+      }
+}
+
+
