@@ -108,7 +108,6 @@
 }
 
 .contenedor-productos {
-        background-color: black;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:  "producto1 producto2 producto3 producto4";      
@@ -119,7 +118,6 @@
 /*Tablet*/
     @media (max-width: 1024px) {
         .contenedor-productos {
-            background-color: blue;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-areas:  "producto1 producto2"
@@ -139,7 +137,6 @@
 /*Celular*/
 @media (max-width: 720px) {
       .contenedor-productos {
-        background-color: red;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas:  "producto1"
