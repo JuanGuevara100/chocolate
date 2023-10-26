@@ -8,7 +8,6 @@
     <title>Registro</title>
 </head>
 <body>
-    <script src="registro.js"></script>
     <header>
         <div class="logo">
             <a href="index.html"><img  src="./assets/media/image/Logo.solo.blanco.png" alt="" width="150px"></a>
@@ -25,45 +24,60 @@
     </header>
 
     <main>
-<h1 class="titulo">ORDENA NUESTROS PRODUCTOS</h1>
-        <div class="formulario">
-            <form action="" method="post">
-                <h2 class="form_title">Registro</h2>
+        <h1 class="titulo">ORDENA NUESTROS PRODUCTOS</h1>
+        <body>
+            <div class="formulario">
+        <form action="" method="post" onsubmit="return validarFormulario()">
+            <h2 class="form_title">Registro</h2>
 
-                <div class="input">
-                    <input type="text" name="name" id="nombre" placeholder="Nombre">
-                </div>
+            <div class="input">
+                <input type="text" name="name" id="nombre" placeholder="Nombre">
+            </div>
+            <div id="mensajeErrorNombre" style="color: red;"></div>
 
-                <div class="input">
-                    <input type="email" name="email" id="email" placeholder="Correo electrónico">
-                </div>
+            <div class="input">
+                <input type="email" name="email" id="email" placeholder="Correo electrónico">
+            </div>
+            <div id="mensajeErrorEmail" style="color: red;"></div>
 
-                <div class="input">
-                    <input type="password" name="password" id="password" placeholder="Contraseña">
-                </div>
+            <div class="input">
+                <input type="password" name="password" id="password" placeholder="Contraseña">
+            </div>
+            <div id="mensajeErrorPassword" style="color: red;"></div>
 
-                <div class="input">
-                    <input type="password" id="confirm-password" placeholder="Confirme su contraseña">
-                </div>
 
-                <div class="input">
-                    <input type="tel" name="telefono" id="tel" placeholder="Número de contacto">
-                </div>
+            <div class="input">
+                <input type="password" id="confirm-password" placeholder="Confirme su contraseña">
+            </div>
+            <div id="mensajeErrorConfPass" style="color: red;"></div>
 
-                <div class="input">
-                    <input type="submit" id="submit" value="Registrar">
-                </div>
 
-                <div id="mensajeError" style="color: red;"></div>
+            <div class="input">
+                <input type="tel" name="telefono" id="tel" placeholder="Número de contacto">
+            </div>
+            <div id="mensajeErrorTel" style="color: red;"></div>
 
-            </form>
 
-        </div>
+            <div class="input">
+                <button type="submit">Registrar</button>
+            </div>
 
-    </main>
+            <div class="login">
+                <p>¿Ya tiene una cuenta? <a href="login.html">Inicie Sesión</a></p>
+            </div>
+            
+        </form>
+        
+        <script src="./assets/js/registro.js"></script>
 
-    <footer>
-          <ul>
+    </div>
+    
+</div>
+
+</main>
+
+<footer>
+    <ul>
             <li><p>Politica de privacidad - Política de Cookies</p></li> 
             <li><p>Chocolates de Buenos Aires - Argentina - DNI: 123456789 - From 1963</p></li> 
             <li><p>email: presidencia@chocolates.com.ar - wattaspp: +54 7549875246</p></li> 
@@ -75,5 +89,6 @@
             <img src="./assets/media/image/video.png" alt="" width="30px">
         </div>
     </footer>
+
 </body>
 </html>

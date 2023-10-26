@@ -1,44 +1,46 @@
-let nombre = document.getElementById("nombre").value;
-let email = document.getElementById("email").value;
-let password= document.getElementById("password").value;
-let confirm_password= document.getElementById("confirm-password").value;
-let telefono = document.getElementById("tel").value;
-
 function validarFormulario() {
-    var mensajeError = document.getElementById("mensajeError");
-    mensajeError.innerHTML = "";}
+    let nombre = document.getElementById("nombre").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirm-password").value;
+    let tel = document.getElementById("tel").value;
+    let mensajeErrorNombre = document.getElementById("mensajeErrorNombre");
+    let mensajeErrorEmail = document.getElementById("mensajeErrorEmail");
+    let mensajeErrorPassword = document.getElementById("mensajeErrorPassword");
+    let mensajeErrorConfPass = document.getElementById("mensajeErrorConfPass");
+    let mensajeErrorTel = document.getElementById("mensajeErrorTel");
+    
 
-if (nombre.trim() === "") {
-    mensajeError.innerHTML += "Por favor, ingrese su nombre.<br>";
+    if (nombre.trim() === "") {
+        mensajeErrorNombre.innerHTML += "Por favor, ingrese su nombre.<br>";
+    }
+
+    if (email.trim() === "" || !validateEmail(email)) {
+        mensajeErrorEmail.innerHTML += "Por favor, ingrese un correo electrónico válido.<br>";
+    }
+
+    if (password.trim() === "") {
+        mensajeErrorPassword.innerHTML += "Por favor, ingrese una contraseña.<br>";
+    }
+
+    if (password !== confirmPassword) {
+        mensajeErrorConfPass.innerHTML += "Las contraseñas no coinciden.<br>";
+    }
+
+    if (tel.trim() === "" || !/^\d{10}$/.test(tel)) {
+        mensajeErrorTel.innerHTML += "Por favor, ingrese un número de contacto válido (10 dígitos).<br>";
+    }
+
+    if ((mensajeErrorNombre.innerHTML|| mensajeErrorEmail||mensajeErrorPassword||mensajeErrorTel) !== "") {
+        return false; 
+    }
+
+    return true;
 }
-
-if (email.trim() === "" || !validateEmail(email)) {
-    mensajeError.innerHTML += "Por favor, ingrese un correo electrónico válido.<br>";
-}
-
-if (password.trim() === "") {
-    mensajeError.innerHTML += "Por favor, ingrese una contraseña.<br>";
-}
-
-if (password !== confirmPassword) {
-    mensajeError.innerHTML += "Las contraseñas no coinciden.<br>";
-}
-
-if (tel.trim() === "" || !/^\d{10}$/.test(tel)) {
-    mensajeError.innerHTML += "Por favor, ingrese un número de contacto válido (10 dígitos).<br>";
-}
-
-if (mensajeError.innerHTML !== "") {
-    return false; // Evita el envío del formulario si hay mensajes de error
-}
-
-return true;
-
 
 function validateEmail(email) {
-// Expresión regular para validar un correo electrónico
-var emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
-return emailRegex.test(email);
+    var emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+    return emailRegex.test(email);
 }
 
 

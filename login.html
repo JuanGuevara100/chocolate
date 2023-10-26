@@ -27,25 +27,28 @@
     <main>
 <h1 class="titulo">ORDENA NUESTROS PRODUCTOS</h1>
         <div class="formulario">
-            <form action="" method="post">
+            <form action="" method="post" onsubmit="return validarInicioSesion()">
                 <h2 class="form_title">Inicia sesión</h2>
 
                 <div class="input">
                     <input type="text" name="user" id="user" placeholder="Nombre de usuario">
                 </div>
+                <div id="mensajeError" style="color: red;"></div>
 
                 <div class="input">
                     <input type="password" name="password" id="password" placeholder="Contraseña">
                 </div>
+                <div id="mensajeError" style="color: red;"></div>
 
 
                 <div class="input">
-                    <input type="submit" id="login" value="Iniciar sesión">
+                    <button type="submit">Iniciar Sesión </button>
                 </div>
 
-                <div id="mensajeError" style="color: red;"></div>
 
             </form>
+
+            <script src="/assets/js/login.js"></script>
 
         </div>
 
