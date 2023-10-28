@@ -1,21 +1,27 @@
-function validarInicioSesiom() {
-    let usuario = document.getElementById("user").value;
-    let contrasena = document.getElementById("password").value;
-    let mensajeError = document.getElementById("mensajeError");
+function validarInicioSesion() {
+    var usuario = document.getElementById('user').value;
+    var contraseña = document.getElementById('password').value;
 
-    mensajeError.innerHTML = "";
+    var mensajeErrorUsuario = document.getElementById('mensajeErrorUsuario');
+    var mensajeErrorContraseña = document.getElementById('mensajeErrorContraseña');
 
+    mensajeErrorUsuario.textContent = '';
+    mensajeErrorContraseña.textContent = '';
 
     if (usuario.trim() === "") {
-        mensajeError.innerHTML += "Por favor, ingrese su nombre de usuario.<br>";
-    }
-
-    if (contrasena.trim() === "") {
-        mensajeError.innerHTML += "Por favor, ingrese su contraseña.<br>";
-    }
-
-    if (mensajeError.innerHTML !== "") {
+        mensajeErrorUsuario.innerHTML = 'El campo de usuario no puede estar vacío';
         return false; 
-    } return true;
+    }
+
+    if (contraseña.trim() === "") {
+        mensajeErrorContraseña.innerHTML = 'El campo de contraseña no puede estar vacío';
+        return false; 
+    }
+
+    if ((mensajeErrorUsuario.innerHTML|| mensajeErrorContraseña.innerHTML) !== "") {
+        return false; 
+    }
+
+    return true;
 
 }
