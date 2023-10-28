@@ -19,6 +19,20 @@
     height: auto;
 }
 
+.formulario-login{
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #E4D4C8;
+  border: 1px solid #92603b;
+  border-radius: 55px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 51vh;
+}
+
 .form_title{
     text-align: center;
     color: #92603b;
