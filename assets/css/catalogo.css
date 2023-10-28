@@ -1,34 +1,45 @@
 .catalogo {
   margin: 5px;
   padding: 5px;
-  text-align:center;
+  text-align: center;
   font-size: 1.1vw;
   font-weight: 500;
-}
-
-.catalogo img {
-  border-radius: 50%;
+  width: 100%;
 }
 
 .contenido {
-  font-size: 1.1vw;
-  font-weight: 500;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
   padding: 20px;
   margin: 20px;
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+
+.producto {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(247, 246, 246);
+}
+
+.producto img {
+  max-width: 100%;
+}
+
+.uno {
+  margin: 10px;
+  padding: 10px;
+  transition: transform 0.7s;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+}
+
+.uno:hover {
+  transform: scale(1.1);
 }
 
 .contenido p {
   text-align: justify;
 }
-
-/*Se define clase uno para poder aplicar el efecto hover que consiste en que la imagen se agranda como se le aplicaran zoom a la imagen*/
-.uno{
-  margin: 10px;
-  padding: 10px;
-  transition: transform .9s; 
- }
-
-.uno:hover {
-  transform: scale(1.50); 
-}
-
