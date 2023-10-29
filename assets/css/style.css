@@ -6,6 +6,7 @@
 @import url("./catalogo.css");
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@300;400;500;700;800&display=swap');
 @import url("./carrito.css");
+@import url("./api.css");
 
 html {
     margin: 0;

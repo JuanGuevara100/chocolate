@@ -1,0 +1,7 @@
+.api{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    min-height: 70vh;
+}
