@@ -91,8 +91,22 @@ const showHTML = () => {
         <span class="cantidad-producto-carrito">${product.quantity}</span>
         <p class="titulo-producto-carrito">${product.title}</p>
         <span class="precio-producto-carrito">${product.price}</span>
-    </div>
-    <img src="assets/media/image/cerrar.jpg" width="50px">
+        </div>
+         <svg
+         xmlns="http://www.w3.org/2000/svg"
+         fill="none"
+         viewBox="0 0 24 24"
+         stroke-width="1.5"
+         stroke="currentColor"
+         class="icon-close"
+          >
+          <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+         d="M6 18L18 6M6 6l12 12"
+         />
+        </svg>
+
       `
 
       rowProduct.append(containerProduct);
