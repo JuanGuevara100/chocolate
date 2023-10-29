@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="shortcut icon" href="./assets/media/image/Chocolate.jpg" type="image/x-icon">
     <title>Carrito</title>
-</head>
+   </head>
 <body>
     <header>
         <div class="logo">
@@ -20,58 +21,72 @@
                 <li><a href="registro.html">REGISTRO</a></li>
                 <li><a href="carrito.html">CARRITO DE COMPRAS</a></li>
             </ul>
-        </nav>   
+        </nav>  
+
+        <div class="container-icon">
+            <div class="container-cart-icon">
+              <img src="assets/media/image/carrito.jpg" width="50px">
+              <div class="count-products">
+                <span id="contador-productos">0</span>
+              </div>
+            </div>
+            <div class="container-cart-products hidden-cart">
+
+              <div class="row-product">
+                 <div class="cart-product">
+                      <div class="info-cart-product">
+                         <span class="cantidad-producto-carrito">1</span>
+                         <p class="titulo-producto-carrito">Zapatos Nike</p>
+                         <span class="precio-producto-carrito">$80</span>
+                      </div>
+                     <img src="assets/media/image/cerrar.jpg" class="icon-close" width="50px">
+                 </div>
+              </div>
+              
+                <div class="cart-total">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200</span>
+                </div>
+            </div>
+        </div> 
     </header>
     <main>
         <h1 style="font-size: 3.2vh;">Tienda</h1>
         <div class="contenedor-productos" id="contenedor-productos">
-                <div class="producto1">
-                    <img src="assets/media/image/Packet.1.black.jpg" alt="chocoblack">
+                <div class="productos">
+                    <img src="assets/media/image/Packet.1.black.jpg" class="imagenp" alt="chocoblack">
                     <div class="informacion">
-                        <p class="prod">Chocolate Negro </p>
+                        <h2 class="prod">Chocolate Negro </h2>
                         <p class="precio">$2000</p>
-                        <form action="" class="form-carrito">
-                            <input class="cantidad" type="number" name="number" id="chocoblack" placeholder="Cantidad">
-                            <input class="agregar" type="submit" id="submit" value="Agregar al carrito">
-                        </form>
+                        <button class="agregar">Agregar al carrito</button>
                     </div>
                 </div>
-                <div class="producto2">
-                    <img src="assets/media/image/Packet.1.leite.jpg" alt="chocoleite">
+                <div class="productos">
+                    <img src="assets/media/image/Packet.1.leite.jpg" class="imagenp" alt="chocoleite">
                     <div class="informacion">
-                        <p class="prod">Chocolate D`leite </p>
+                        <h2 class="prod">Chocolate D`leite </h2>
                         <p class="precio">$2000</p>
-                        <form action="" class="form-carrito">
-                            <input class="cantidad" type="number" name="number" id="chocoleite" placeholder="Cantidad">
-                            <input class="agregar" type="submit" id="submit" value="Agregar al carrito">
-                        </form> 
+                        <button class="agregar">Agregar al carrito</button>
                     </div>
                 </div>
-                <div class="producto3">
-                    <img src="assets/media/image/Packet.1.blanco.jpg" alt="chocoblanco">
+                <div class="productos">
+                    <img src="assets/media/image/Packet.1.blanco.jpg" class="imagenp" alt="chocoblanco">
                     <div class="informacion">
-                        <p class="prod">Chocolate Blanco</p>
+                        <h2 class="prod">Chocolate Blanco</h2>
                         <p class="precio">$2500</p> 
-                        <form action="" class="form-carrito">
-                            <input class="cantidad" type="number" name="number" id="chocoblanco" placeholder="Cantidad">
-                            <input class="agregar" type="submit" id="submit" value="Agregar al carrito">
-                        </form>
+                        <button class="agregar">Agregar al carrito</button>
                     </div>
                 </div>
-                <div class="producto4">
-                    <img src="assets/media/image/Packet.1.almedr.jpg" alt="chocoalmendrado">
+                <div class="productos">
+                    <img src="assets/media/image/Packet.1.almedr.jpg" class="imagenp" alt="chocoalmendrado">
                     <div class="informacion">
-                        <p class="prod">Chocolate Almendrado</p>
+                        <h2 class="prod">Chocolate Almendrado</h2>
                         <p class="precio">$2500</p>
-                        <form action="" class="form-carrito">
-                            <input class="cantidad" type="number" name="number" id="chocoalmendrado" placeholder="Cantidad">
-                            <input class="agregar" type="submit" id="submit" value="Agregar al carrito">
-                        </form>
+                        <button class="agregar">Agregar al carrito</button>
                     </div>
                 </div>
         </div>
-        <script src="assets/js/compra.js"></script>
-    </main>
+        </main>
     <footer>
          <ul>
             <li><p>Politica de privacidad - Política de Cookies</p></li> 
@@ -85,5 +100,6 @@
             <img src="./assets/media/image/video.png" alt="" width="30px">
          </div>
     </footer>
-</body>
+    <script src="assets/js/carrito.js"></script>
+   </body>
 </html>
