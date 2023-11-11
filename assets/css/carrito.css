@@ -151,6 +151,10 @@
     footer ul li{
         font-size: 1.5vh;
       }
+
+    .container-icon .container-cart-icon img {
+        width: 20px;
+      }
 }
 
 
