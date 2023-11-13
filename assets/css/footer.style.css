@@ -40,3 +40,14 @@ footer ul li{
     margin: 2px;
     padding: 2px;
     }
+
+
+
+ /*Celular*/
+@media (max-width: 720px) {
+
+footer ul li{
+font-size: 1.4vh;
+ }
+
+    }

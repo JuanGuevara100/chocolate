@@ -107,7 +107,7 @@ main h1 {
 
 .general {
  height: 70%;
- width: 90%; /*ancho*/
+ width: 90%;
  margin: auto;
  padding: 40px 0;
  display: flex; 
@@ -130,12 +130,5 @@ main h1 {
   background-size: cover;
   background-position: center center;
                 }
-
-.menu a{
- font-size: 1.1vh;
-   }
             
-footer ul li{
- font-size: 1.4vh;
-   }          
  }

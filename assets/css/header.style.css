@@ -30,8 +30,9 @@ header{
   color: #fff;
   margin: 0;
   box-sizing: border-box;
-   padding-top: 10px; padding-bottom: 10px;
-   padding-left: 15px ; padding-right: 15px;
+  text-align: center;
+  padding-top: 10px; padding-bottom: 10px;
+  padding-left: 15px ; padding-right: 15px;
 }
 
 .menu a{
@@ -55,4 +56,15 @@ header{
   background-color:#332013;
   color: #d0b49f;
   align-items: center;
+}
+
+
+/*Celular*/
+@media (max-width: 720px) {
+
+  .menu a{
+    font-size: 1.1vh;
+      }
+
+
 }
