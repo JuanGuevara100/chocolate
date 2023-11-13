@@ -39,6 +39,7 @@
     padding: 0;
     background-color: transparent;
     font-size: 1.2vw;
+    text-align: justify;
     grid-area: produ;
 }
 
@@ -150,10 +151,12 @@
 
     .contenedor .filo{
       width: 50vh;
+      font-size: 2.5vh;
     }
     
     .contenedor .produ{
       width: 50vh;
+      font-size: 2.5vh;
     }
 
     }
