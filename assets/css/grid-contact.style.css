@@ -30,6 +30,7 @@
     margin: 0;
     padding: 0;
     text-align: justify;
+    font-size: 1.2vw;
     grid-area: filo;
 }
 
@@ -37,6 +38,7 @@
     margin: 0;
     padding: 0;
     background-color: transparent;
+    font-size: 1.2vw;
     grid-area: produ;
 }
 
