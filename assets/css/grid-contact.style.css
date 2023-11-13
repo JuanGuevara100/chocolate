@@ -98,7 +98,7 @@
  @media (max-width: 720px) {
 
     .contenedor{
-        width: 90% ;
+        width: 90%;
         height: 100%;
         margin: 10px auto;
         display: grid;
@@ -109,14 +109,13 @@
                             "produ"
                             "sidebar2";
         font-size: 1.1vw;
-        font-weight: 500;
-        justify-items:center;
+        justify-items: center;
             }
 
     .contenedor .sidebar{   
         padding: 0;
         grid-area: sidebar;
-        width: 100px;
+        width: 20vh;
         overflow: hidden;
         border-radius: 5vh;
        
@@ -143,7 +142,7 @@
         padding: 0;
         grid-area: sidebar2;
         height: 35vh;
-        width: 90vh;
+        width: 60vh;
         border-radius: 5vh;
         size: 100%;
         overflow: hidden;
