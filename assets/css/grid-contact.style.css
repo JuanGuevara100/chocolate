@@ -1,5 +1,5 @@
 .contenedor{
-    width: 90%;
+    width: 90% ;
     height: 100%;
     max-width: 3000px;
     margin: 10px auto;
@@ -82,6 +82,20 @@
 }
 
 
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
  /*Celular*/
  @media (max-width: 720px) {
 
@@ -141,6 +155,7 @@
     .contenedor .produ{
       width: 50vh;
       font-size: 2.5vh;
+
     }
 
     }
