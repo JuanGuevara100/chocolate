@@ -102,33 +102,64 @@ main h1 {
   justify-content: space-between;
                 }
 
-                
+ /*Tablet*/
+ @media (max-width: 1024px) {
+
+  .general {
+    height: 70%;
+    width: 90%; /*ancho*/
+    margin: auto;
+    padding: 40px 0;
+    display: flex; 
+    flex-direction: column;
+     justify-content: space-between;
+           }
+  
+  .division1 {
+    font-size: 1vh;;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); /*con la funcion repetir, se puede leeer: repetir tres columnas de a una fraccion cada una*/
+    gap: 20px;
+    }
+  
+   .division2 {
+    height: 1000px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+                  }
+              
+   }
+
+   /*Celular*/               
 @media (max-width: 720px) {
 
-.general {
- height: 70%;
- width: 90%;
- margin: auto;
- padding: 40px 0;
- display: flex; 
- flex-direction: column;
-  justify-content: space-between;
-                           }
-                  
-.division1 {
- font-size: 1vh;;
- display: flex; 
- flex-direction: column;
- justify-content: space-between;
- }
-
- .division2 {
-  height: 500px;
-  border-radius: 50px;
-  text-align: center;
-  padding: 20px;
-  background-size: cover;
-  background-position: center center;
-                }
-            
- }
+  .general {
+   height: 70%;
+   width: 90%;
+   margin: auto;
+   padding: 40px 0;
+   display: flex; 
+   flex-direction: column;
+    justify-content: space-between;
+                             }
+                    
+  .division1 {
+   font-size: 1vh;;
+   display: flex; 
+   flex-direction: column;
+   justify-content: space-between;
+   }
+  
+   .division2 {
+    height: 500px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center center;
+                  }
+              
+   }

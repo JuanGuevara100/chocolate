@@ -96,6 +96,72 @@
     100% {margin-left: -300%;}
 }
 
+ /*tablet*/
+ @media (max-width: 1024px) {
+
+    .contenedor{
+        width: 50vh;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-areas: 
+                            "sidebar"
+                            "filo"
+                            "produ"
+                            "sidebar2";
+        justify-items: center;
+              }
+
+    .contenedor .sidebar{   
+        padding: 0;
+        grid-area: sidebar;
+        width: 50vh;
+        height: 60vh;
+        overflow: hidden;
+        border-radius: 5vh;
+       
+       }
+
+    .sidebar ul{
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: slide 15s infinite alternate ease-in-out;
+    }
+    
+    .sidebar li{
+        list-style: none;
+        position: relative;
+    }
+    
+    .sidebar img{
+        border-radius: 30px; 
+    }
+
+    .contenedor .sidebar2{
+        margin: 0;
+        padding: 0;
+        grid-area: sidebar2;
+        height: 55vh;
+        width: 50vh;
+        border-radius: 5vh;
+        overflow: hidden;
+    }
+
+    .contenedor .filo{
+      width: 50vh;
+      font-size: 2.5vh;
+     
+    }
+    
+    .contenedor .produ{
+      width: 50vh;
+      font-size: 2.5vh;
+      
+    }
+
+    }
+
  /*Celular*/
  @media (max-width: 720px) {
 
